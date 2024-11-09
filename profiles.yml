@@ -1,0 +1,21 @@
+snowflake_project:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: wv46703.eu-west-3.aws
+      user: ubiowororukevwe
+      password: Comfort12345@
+      role: accountadmin
+      database: dbt_db
+      warehouse: compute_wh
+      schema: dbt_schema
+      threads: 8
+      client_session_keep_alive: False
+      connect_retries: 0 # default 0
+      connect_timeout: 15 # default: 10
+      retry_on_database_errors: True # default: false
+      retry_all: False  # default: false
+      reuse_connections: True # default: True if client_session_keep_alive is False, otherwise None
+      snowflake_project:
+  
